@@ -1,0 +1,9 @@
+<div>
+    <article>
+        <h2>{{ nome }}</h2>
+        <p>{{ classe }}</p>
+    
+        <button (click)="mostra()">visuaizza media</button>
+            <p *ngIf="mostra()"> {{ media }}</p>
+    </article>
+</div>
