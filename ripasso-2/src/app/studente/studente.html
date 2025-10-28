@@ -2,8 +2,8 @@
     <article>
         <h2>{{ nome }}</h2>
         <p>{{ classe }}</p>
-    
+        <a [routerLink]="['/pagina3', id]">Mostra dettagli</a>
         <button (click)="mostra()">visuaizza media</button>
-            <p *ngIf="mostra()"> {{ media }}</p>
+            <p *ngIf="m"> {{ media }}</p>
     </article>
 </div>
